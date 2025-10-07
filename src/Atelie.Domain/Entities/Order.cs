@@ -20,6 +20,6 @@ public class Order : Auditable
     public decimal PaidAmount { get; set; }
 
 
-    public ICollection<OrderWorker> Workers { get; set; } = new List<OrderWorker>();
+   // public ICollection<OrderWorker> Workers { get; set; } = new List<OrderWorker>();
 
 }
