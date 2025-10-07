@@ -1,0 +1,12 @@
+D:\BackendProject\Atelie\src\Atelie.Domain\bin\Debug\net8.0\Atelie.Domain.deps.json
+D:\BackendProject\Atelie\src\Atelie.Domain\bin\Debug\net8.0\Atelie.Domain.dll
+D:\BackendProject\Atelie\src\Atelie.Domain\bin\Debug\net8.0\Atelie.Domain.pdb
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.AssemblyInfoInputs.cache
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.AssemblyInfo.cs
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.csproj.CoreCompileInputs.cache
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.sourcelink.json
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.dll
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\refint\Atelie.Domain.dll
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\Atelie.Domain.pdb
+D:\BackendProject\Atelie\src\Atelie.Domain\obj\Debug\net8.0\ref\Atelie.Domain.dll
