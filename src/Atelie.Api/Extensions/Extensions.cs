@@ -23,6 +23,12 @@ public static class Extensions
 
         services.AddMemoryCache();
 
+        services.AddRouting(options =>
+        {
+            options.LowercaseUrls = true;
+            options.LowercaseQueryStrings = true; // optional — query string'larni ham kichik qiladi (?Id=5 -> ?id=5)
+        });
+
         services.AddLogging();
 
         services.AddBackgroundJobs();
@@ -39,6 +45,7 @@ public static class Extensions
     public static void AddOptions(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<JwtOption>(configuration.GetSection("JwtOption"));
+        services.Configure<SmsOption>(configuration.GetSection("SmsOption"));
     }
 
     public static void AddAuth(this IServiceCollection serviceCollection, IConfiguration configuration)

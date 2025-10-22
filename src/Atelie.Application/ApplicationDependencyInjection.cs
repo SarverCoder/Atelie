@@ -1,5 +1,6 @@
 ﻿using Atelie.Application.Helpers.GenerateJwt;
 using Atelie.Application.Helpers.PasswordHasher;
+using Atelie.Application.Helpers.SmsProvider;
 using Atelie.Application.Services;
 using Atelie.Application.Services.Implementations;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,11 @@ public static class ApplicationDependencyInjection
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ICustomerService, CustomerService>();
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IOrderService, OrderService>();
+        services.AddScoped<IFabricService, FabricService>();
+        services.AddScoped<IDashboardService, DashboardService>();
+        services.AddScoped<ISmsTokenProvider, SmsTokenProvider>();
+        services.AddScoped<ISmsProvider, SmsProvider>();
     }
     private static void RegisterAutoMapper(this IServiceCollection services)
     {
@@ -36,6 +42,7 @@ public static class ApplicationDependencyInjection
 
     private static void AddHttpServices(this IServiceCollection services)
     {
-       
+        services.AddHttpClient<SmsTokenProvider>();
+        services.AddHttpClient<SmsProvider>();
     }
 }

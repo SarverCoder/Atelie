@@ -12,5 +12,8 @@ public class Customer : Auditable
     public CustomerStatus CustomerStatus { get; set; }
     public string? TelegramUsername { get; set; }
     public DateTime? SubmissionDate { get; set; }
-    public string? ContactTime { get; set; }  
+    public string? ContactTime { get; set; }
+
+    // Navigation properties
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }       

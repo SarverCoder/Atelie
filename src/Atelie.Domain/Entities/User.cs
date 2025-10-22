@@ -15,4 +15,6 @@ public class User : Auditable
     public DateTime? TokenExpiryTime { get; set; }
     public UserRole UserRole { get; set; }  
     public bool IsActive { get; set; } = true;
+
+    public ICollection<OrderWorker> OrderWorkers { get; set; } = new List<OrderWorker>();
 }
